@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.InteropServices;
-using System.Runtime.Remoting.Messaging;
 using CodeExercise.DressCode.Engine;
 using CodeExercise.DressCode.Engine.Violations;
 using StructureMap;

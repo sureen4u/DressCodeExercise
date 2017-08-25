@@ -1,5 +1,4 @@
-﻿using System;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using CodeExercise.DressCode.Engine.ValueObjects;
 using CodeExercise.DressCode.Engine.Violations;
 
