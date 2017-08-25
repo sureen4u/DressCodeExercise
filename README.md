@@ -16,15 +16,15 @@ Your challenge is to programmatically process a list of commands for getting rea
 
 2.	Comma separated list of numeric commands <br />
 
-<table><tr><td>Command</td><td>Description</td><td>HOt Response</td><td>Cold Response</td></tr>
-<table><tr><td>1</td><td>Put on footwear</td><td>“sandals”</td><td>“boots”</td></tr>
-<table><tr><td>2</td><td>Put on headwear</td><td>“sun visor”</td><td>“hat”</td></tr>
-<table><tr><td>3</td><td>Put on socks</td><td>fail</td><td>“socks”</td></tr>
-<table><tr><td>4</td><td>Put on shirt</td><td>“t-shirt”</td><td>“shirt”</td></tr>
-<table><tr><td>5</td><td>Put on jacket</td><td>fail</td><td>“jacket”</td></tr>
-<table><tr><td>6</td><td>Put on pants</td><td>“shorts”</td><td>“pants”</td></tr>
-<table><tr><td>7</td><td>eave house</td><td>“leaving house”</td><td>“leaving house”</td></tr>
-<table><tr><td>8</td><td>Take off pajamas</td><td>“Removing PJs”</td><td>“Removing PJs”</td></tr>
+<table><tr><th>Command</th><th>Description</th><th>HOt Response</th><th>Cold Response</th></tr>
+<tr><td>1</td><td>Put on footwear</td><td>“sandals”</td><td>“boots”</td></tr>
+<tr><td>2</td><td>Put on headwear</td><td>“sun visor”</td><td>“hat”</td></tr>
+<tr><td>3</td><td>Put on socks</td><td>fail</td><td>“socks”</td></tr>
+<tr><td>4</td><td>Put on shirt</td><td>“t-shirt”</td><td>“shirt”</td></tr>
+<tr><td>5</td><td>Put on jacket</td><td>fail</td><td>“jacket”</td></tr>
+<tr><td>6</td><td>Put on pants</td><td>“shorts”</td><td>“pants”</td></tr>
+<tr><td>7</td><td>eave house</td><td>“leaving house”</td><td>“leaving house”</td></tr>
+<tr><td>8</td><td>Take off pajamas</td><td>“Removing PJs”</td><td>“Removing PJs”</td></tr></table>
 
 Command	|	Description	HOT |	Response		| COLD Response<br />
 1		|	Put on footwear	|	“sandals”	    |  “boots”     <br />
