@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{65386D00-F2E4-46C0-9A0C-64C31D89FDB6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CodeExercise.DressCode.Engine</RootNamespace>
+    <AssemblyName>CodeExercise.DressCode.Engine</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IInputOption.cs" />
+    <Compile Include="InputOption.cs" />
+    <Compile Include="IDressPicker.cs" />
+    <Compile Include="Repository\DressHolder.cs" />
+    <Compile Include="Repository\IDressHolder.cs" />
+    <Compile Include="ValueObjects\Outfit.cs" />
+    <Compile Include="ValueObjects\Command.cs" />
+    <Compile Include="ValueObjects\Temperature.cs" />
+    <Compile Include="Violations\NotValidTemperatureException.cs" />
+    <Compile Include="Violations\NotValidCommandException.cs" />
+    <Compile Include="Violations\CannotPutOnSocksWhenHotViolation.cs" />
+    <Compile Include="Violations\CannotPutJacketOnWhenHotViolation.cs" />
+    <Compile Include="Violations\ShirtMustBePutOnBeforeJacketViolation.cs" />
+    <Compile Include="Violations\ShirtMustBePutOnBeforeHeadwearViolation.cs" />
+    <Compile Include="Violations\PantsMustBePutOnBeforeShoesViolation.cs" />
+    <Compile Include="Violations\SocksMustBePutOnBeforeShoesViolation.cs" />
+    <Compile Include="Violations\Violation.cs" />
+    <Compile Include="Violations\NotValidToLeaveHouseViolation.cs" />
+    <Compile Include="Violations\OnlyOnePieceOfEachClothingAllowedViolation.cs" />
+    <Compile Include="Violations\PajamaNotFoundViolation.cs" />
+    <Compile Include="Violations\PajamaMustTakeOffViolation.cs" />
+    <Compile Include="Clothing\HeadWear.cs" />
+    <Compile Include="Clothing\Jacket.cs" />
+    <Compile Include="ValueObjects\EnumExtension.cs" />
+    <Compile Include="Clothing\Shirt.cs" />
+    <Compile Include="Clothing\Pants.cs" />
+    <Compile Include="Clothing\ClothingFactory.cs" />
+    <Compile Include="Clothing\IClothing.cs" />
+    <Compile Include="Clothing\Socks.cs" />
+    <Compile Include="Clothing\FootWear.cs" />
+    <Compile Include="DressPicker.cs" />
+    <Compile Include="ValueObjects\OutfitType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

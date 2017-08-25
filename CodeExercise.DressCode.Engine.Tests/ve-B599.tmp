@@ -1,0 +1,85 @@
+﻿using NUnit.Framework;
+using CodeExercise.DressCode.Engine.ValueObjects;
+using CodeExercise.DressCode.Engine.Violations;
+
+namespace CodeExercise.DressCode.Engine.Tests
+{
+    [TestFixture]
+    public class ShirtTest
+    {
+        [Test]
+        [TestCase(Temperature.Hot)]
+        [TestCase(Temperature.Cold)]
+        public void Pajama_Must_Taken_Off_Before_Shirts_Put_On(Temperature temperature)
+        {
+            var dressPicker = new DressPicker(temperature);
+
+            Assert.Throws<PajamaMustTakeOffViolation>(() => dressPicker.Wear(OutfitType.Shirt));
+
+        }
+        [Test]
+        [TestCase(Temperature.Hot)]
+        [TestCase(Temperature.Cold)]
+        public void Only_One_Peice_Of_Shirt_Can_Put_On(Temperature temperature)
+        {
+            var dressPicker = new DressPicker(temperature);
+            dressPicker.RemovePajama();
+            dressPicker.Wear(OutfitType.Shirt);
+            Assert.Throws<OnlyOnePieceOfEachClothingAllowedViolation>(() => dressPicker.Wear(OutfitType.Shirt));
+        }
+
+        [Test]
+        public void When_Hot_TShirt_Can_Be_Put_On()
+        {
+            var dressPicker = new DressPicker(Temperature.Hot);
+
+            dressPicker.RemovePajama();
+
+            Assert.AreEqual(Outfit.Tshirt.ToDescription(), dressPicker.Wear(OutfitType.Shirt));
+        }
+        
+        [Test]
+        public void When_Cold_Shirt_Can_Be_Put_On()
+        {
+            var dressPicker = new DressPicker(Temperature.Cold);
+
+            dressPicker.RemovePajama();
+
+            Assert.AreEqual(Outfit.Shirt.ToDescription(),dressPicker.Wear(OutfitType.Shirt));
+        }
+        [Test]
+        public void When_Cold_Shirt_Is_Manditory_To_Leave_House()
+        {
+            var dressPicker = new DressPicker(Temperature.Cold);
+
+            dressPicker.RemovePajama();
+            dressPicker.Wear(OutfitType.Pants);
+            dressPicker.Wear(OutfitType.Socks);
+            dressPicker.Wear(OutfitType.FootWear);
+
+            Assert.Throws<NotValidToLeaveHouseViolation>(() => dressPicker.LeaveHouse());
+
+            dressPicker.Wear(OutfitType.Shirt);
+            dressPicker.Wear(OutfitType.Jacket);
+            dressPicker.Wear(OutfitType.HeadWear);
+
+            Assert.AreEqual("leaving house", dressPicker.LeaveHouse());
+
+        }
+        [Test]
+        public void When_Hot_Shirt_Is_Manditory_To_Leave_House()
+        {
+            var dressPicker = new DressPicker(Temperature.Hot);
+
+            dressPicker.RemovePajama();
+            dressPicker.Wear(OutfitType.Pants);
+            dressPicker.Wear(OutfitType.FootWear);
+
+            Assert.Throws<NotValidToLeaveHouseViolation>(() => dressPicker.LeaveHouse());
+            dressPicker.Wear(OutfitType.Shirt);
+            dressPicker.Wear(OutfitType.HeadWear);
+
+            Assert.AreEqual("leaving house", dressPicker.LeaveHouse());
+        }
+    }
+}

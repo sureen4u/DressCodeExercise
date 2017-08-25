@@ -1,0 +1,9 @@
+C:\Users\Surendra.kumar\documents\visual studio 2015\Projects\CodeExercise.DressCode\CodeExercise.DressCode\bin\Debug\CodeExercise.DressCode.dll
+C:\Users\Surendra.kumar\documents\visual studio 2015\Projects\CodeExercise.DressCode\CodeExercise.DressCode\bin\Debug\CodeExercise.DressCode.pdb
+C:\Users\Surendra.kumar\documents\visual studio 2015\Projects\CodeExercise.DressCode\CodeExercise.DressCode\obj\Debug\CodeExercise.DressCode.dll
+C:\Users\Surendra.kumar\documents\visual studio 2015\Projects\CodeExercise.DressCode\CodeExercise.DressCode\obj\Debug\CodeExercise.DressCode.pdb
+C:\Users\Surendra.kumar\documents\visual studio 2015\Projects\CodeExercise.DressCode\CodeExercise.DressCode\obj\Debug\CodeExercise.DressCode.Engine.csprojResolveAssemblyReference.cache
+C:\Users\Surendra.kumar\documents\visual studio 2015\Projects\CodeExercise.DressCode\CodeExercise.DressCode.Engine\bin\Debug\CodeExercise.DressCode.Engine.dll
+C:\Users\Surendra.kumar\documents\visual studio 2015\Projects\CodeExercise.DressCode\CodeExercise.DressCode.Engine\bin\Debug\CodeExercise.DressCode.Engine.pdb
+C:\Users\Surendra.kumar\documents\visual studio 2015\Projects\CodeExercise.DressCode\CodeExercise.DressCode.Engine\obj\Debug\CodeExercise.DressCode.Engine.dll
+C:\Users\Surendra.kumar\documents\visual studio 2015\Projects\CodeExercise.DressCode\CodeExercise.DressCode.Engine\obj\Debug\CodeExercise.DressCode.Engine.pdb
