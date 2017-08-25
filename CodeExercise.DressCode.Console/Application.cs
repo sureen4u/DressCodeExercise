@@ -14,6 +14,7 @@ namespace CodeExercise.DressCode.Console
         private readonly IInputOption _input;
         private const string InvalidCommand = "Invalid Commands!.Please try again.";
         private const string InvalidTemperature = "Invalid Temperature!.Please try again.";
+
         public Application(IWriter writer, IReader reader, IInputOption input)
         {
             _writer = writer;
@@ -64,10 +65,14 @@ namespace CodeExercise.DressCode.Console
         {
            var temperatures = _input.GetTemperatureOptions();
             _writer.Write("Enter Temperature (" + string.Join("/", temperatures.ToArray()) + "):");
+
             var input =  _reader.ReadLine();
+
             if (temperatures.Contains(input, StringComparer.CurrentCultureIgnoreCase))
                 return input;
+
             _writer.WriteLine(InvalidTemperature);
+
             return null;
         }
         private IList<int> GetCommands()
