@@ -8,3 +8,13 @@ C:\Users\Surendra.kumar\documents\visual studio 2015\Projects\CodeExercise.Dress
 C:\Users\Surendra.kumar\documents\visual studio 2015\Projects\CodeExercise.DressCode\CodeExercise.DressCode.Console\bin\Debug\CodeExercise.DressCode.Engine.pdb
 C:\Users\Surendra.kumar\documents\visual studio 2015\Projects\CodeExercise.DressCode\CodeExercise.DressCode.Console\bin\Debug\StructureMap.dll
 C:\Users\Surendra.kumar\documents\visual studio 2015\Projects\CodeExercise.DressCode\CodeExercise.DressCode.Console\bin\Debug\StructureMap.xml
+C:\Users\Surendra.kumar\Documents\GitHub\CodeExercise\CodeExercise.DressCode.Console\bin\Debug\CodeExercise.DressCode.Console.exe.config
+C:\Users\Surendra.kumar\Documents\GitHub\CodeExercise\CodeExercise.DressCode.Console\bin\Debug\CodeExercise.DressCode.Console.exe
+C:\Users\Surendra.kumar\Documents\GitHub\CodeExercise\CodeExercise.DressCode.Console\bin\Debug\CodeExercise.DressCode.Console.pdb
+C:\Users\Surendra.kumar\Documents\GitHub\CodeExercise\CodeExercise.DressCode.Console\bin\Debug\CodeExercise.DressCode.Engine.dll
+C:\Users\Surendra.kumar\Documents\GitHub\CodeExercise\CodeExercise.DressCode.Console\bin\Debug\StructureMap.dll
+C:\Users\Surendra.kumar\Documents\GitHub\CodeExercise\CodeExercise.DressCode.Console\bin\Debug\CodeExercise.DressCode.Engine.pdb
+C:\Users\Surendra.kumar\Documents\GitHub\CodeExercise\CodeExercise.DressCode.Console\bin\Debug\StructureMap.xml
+C:\Users\Surendra.kumar\Documents\GitHub\CodeExercise\CodeExercise.DressCode.Console\obj\Debug\CodeExercise.DressCode.Console.csprojResolveAssemblyReference.cache
+C:\Users\Surendra.kumar\Documents\GitHub\CodeExercise\CodeExercise.DressCode.Console\obj\Debug\CodeExercise.DressCode.Console.exe
+C:\Users\Surendra.kumar\Documents\GitHub\CodeExercise\CodeExercise.DressCode.Console\obj\Debug\CodeExercise.DressCode.Console.pdb

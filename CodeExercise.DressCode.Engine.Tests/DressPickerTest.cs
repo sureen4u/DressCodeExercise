@@ -53,37 +53,15 @@ namespace CodeExercise.DressCode.Engine.Tests
             Assert.Throws<NotValidCommandException>(() => dressPicker.Process(11));
         }
         [Test]
-        public void When_Cold_Has_To_Leave_House_After_Wearing_All_Outfit_Types()
+        [TestCase(Temperature.Hot)]
+        [TestCase(Temperature.Cold)]
+        public void Cannot_Leave_House_With_Pajama(Temperature temperature)
         {
-            var dressPicker = new DressPicker(Temperature.Cold.ToString());
-            dressPicker.Process((int)Command.TakeOffPajama);
-            dressPicker.Process((int)Command.PutOnShirt);
-            dressPicker.Process((int)Command.PutOnPants);
-            dressPicker.Process((int)Command.PutOnSocks);
-
+            var dressPicker = new DressPicker(temperature.ToString());
             Assert.Throws<NotValidToLeaveHouseViolation>(() => dressPicker.Process((int)Command.LeaveHouse));
 
-            dressPicker.Process((int)Command.PutOnFootWear);
-            dressPicker.Process((int)Command.PutOnJacket);
-            dressPicker.Process((int)Command.PutOnHeadWear);
-             
-            Assert.AreEqual("leaving house", dressPicker.Process((int)Command.LeaveHouse));
         }
-        [Test]
-        public void When_Hot_Can_Leave_House_After_Wearing_All_Outfit_Types_Except_Socks_Jacket()
-        {
-            var dressPicker = new DressPicker(Temperature.Hot.ToString());
-            dressPicker.Process((int)Command.TakeOffPajama);
-            dressPicker.Process((int)Command.PutOnShirt);
-            dressPicker.Process((int)Command.PutOnPants);
-
-            Assert.Throws<NotValidToLeaveHouseViolation>(() => dressPicker.Process((int)Command.LeaveHouse));
-
-            dressPicker.Process((int)Command.PutOnFootWear);
-            dressPicker.Process((int)Command.PutOnHeadWear);
-
-            Assert.AreEqual("leaving house", dressPicker.Process((int)Command.LeaveHouse));
-        }
+       
 
     }
 }

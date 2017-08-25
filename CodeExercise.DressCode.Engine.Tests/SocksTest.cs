@@ -46,6 +46,37 @@ namespace CodeExercise.DressCode.Engine.Tests
             Assert.AreEqual(Outfit.Socks.ToDescription(),dressPicker.Process((int)Command.PutOnSocks));
            
         }
-        
+        [Test]
+        public void When_Cold_Socks_Is_Manditory_To_Leave_House()
+        {
+            var dressPicker = new DressPicker(Temperature.Cold.ToString());
+
+            dressPicker.Process((int)Command.TakeOffPajama);
+            dressPicker.Process((int)Command.PutOnPants);
+            dressPicker.Process((int)Command.PutOnShirt);
+            dressPicker.Process((int)Command.PutOnJacket);
+            dressPicker.Process((int)Command.PutOnHeadWear);
+
+            Assert.Throws<NotValidToLeaveHouseViolation>(() => dressPicker.Process((int)Command.LeaveHouse));
+
+            dressPicker.Process((int)Command.PutOnSocks);
+            dressPicker.Process((int)Command.PutOnFootWear);
+
+            Assert.AreEqual("leaving house", dressPicker.Process((int)Command.LeaveHouse));
+
+        }
+        [Test]
+        public void When_Hot_Socks_Is_Not_Manditory_To_Leave_House()
+        {
+            var dressPicker = new DressPicker(Temperature.Hot.ToString());
+
+            dressPicker.Process((int)Command.TakeOffPajama);
+            dressPicker.Process((int)Command.PutOnPants);
+            dressPicker.Process((int)Command.PutOnFootWear);
+            dressPicker.Process((int)Command.PutOnShirt);
+            dressPicker.Process((int)Command.PutOnHeadWear);
+
+            Assert.AreEqual("leaving house", dressPicker.Process((int)Command.LeaveHouse));
+        }
     }
 }
