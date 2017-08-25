@@ -6,8 +6,8 @@ Open Solution in Visual Studio 2015 and buildl solution to get Nuget packages do
 <b>Problem Description</b> <br />
 
 <b>Problem:</b><br />
-You are in your house wearing pajamas. You must be appropriately dressed for the temperature before leaving your house.
-Your challenge is to programmatically process a list of commands for getting ready, enforce related rules, and display appropriate output.
+You are in your house wearing pajamas. You must be appropriately dressed for the temperature before leaving your house.<br />
+Your challenge is to programmatically process a list of commands for getting ready, enforce related rules, and display appropriate output.<br />
 
 <b>Inputs:</b><br />
 1.	Temperature Type (one of the following) <br />
@@ -16,8 +16,17 @@ Your challenge is to programmatically process a list of commands for getting rea
 
 2.	Comma separated list of numeric commands <br />
 
+<table><tr><td>Command</td><td>Description</td><td>HOt Response</td><td>Cold Response</td></tr>
+<table><tr><td>1</td><td>Put on footwear</td><td>“sandals”</td><td>“boots”</td></tr>
+<table><tr><td>2</td><td>Put on headwear</td><td>“sun visor”</td><td>“hat”</td></tr>
+<table><tr><td>3</td><td>Put on socks</td><td>fail</td><td>“socks”</td></tr>
+<table><tr><td>4</td><td>Put on shirt</td><td>“t-shirt”</td><td>“shirt”</td></tr>
+<table><tr><td>5</td><td>Put on jacket</td><td>fail</td><td>“jacket”</td></tr>
+<table><tr><td>6</td><td>Put on pants</td><td>“shorts”</td><td>“pants”</td></tr>
+<table><tr><td>7</td><td>eave house</td><td>“leaving house”</td><td>“leaving house”</td></tr>
+<table><tr><td>8</td><td>Take off pajamas</td><td>“Removing PJs”</td><td>“Removing PJs”</td></tr>
+
 Command	|	Description	HOT |	Response		| COLD Response<br />
------------------------------------------------------------------
 1		|	Put on footwear	|	“sandals”	    |  “boots”     <br />
 2		|	Put on headwear	|	“sun visor”	    |   “hat”   <br />
 3		|	Put on socks	|	fail	        |   “socks”<br />
@@ -26,7 +35,7 @@ Command	|	Description	HOT |	Response		| COLD Response<br />
 6		|	Put on pants	|	“shorts”	    |    “pants”<br />
 7		|	Leave house	 	|	“leaving house”	|    “leaving house”<br />
 8		|	Take off pajamas|	“Removing PJs”	|	“Removing PJs”<br />
----------------------------------------------------------------------
+
 <b>Rules:</b> <br />
 •	Initial state is in your house with your pajamas on <br />
 •	Pajamas must be taken off before anything else can be put on <br />
@@ -44,17 +53,17 @@ Command	|	Description	HOT |	Response		| COLD Response<br />
 <b>Success</b> <br />
 
 Input: HOT 8, 6, 4, 2, 1, 7<br />
-Output: Removing PJs, shorts, t-shirt, sun visor, sandals, leaving house<br />
+Output: Removing PJs, shorts, t-shirt, sun visor, sandals, leaving house<br /><br />
 Input: COLD 8, 6, 3, 4, 2, 5, 1, 7<br />
-Output: Removing PJs, pants, socks, shirt, hat, jacket, boots, leaving house<br />
+Output: Removing PJs, pants, socks, shirt, hat, jacket, boots, leaving house<br /><br />
  
 <b>Failure</b><br />
 
 Input: HOT 8, 6, 6<br />
-Output: Removing PJs, shorts, fail<br />
+Output: Removing PJs, shorts, fail<br /><br />
 Input: HOT 8, 6, 3<br />
-Output: Removing PJs, shorts, fail<br />
+Output: Removing PJs, shorts, fail<br /><br />
 Input: COLD 8, 6, 3, 4, 2, 5, 7<br />
-Output: Removing PJs, pants, socks, shirt, hat, jacket, fail<br />
+Output: Removing PJs, pants, socks, shirt, hat, jacket, fail<br /><br />
 Input: COLD 6<br />
-Output: fail<br />
+Output: fail<br /><br />
