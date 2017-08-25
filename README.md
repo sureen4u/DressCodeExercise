@@ -6,7 +6,7 @@ Open Solution in Visual Studio 2015 and buildl solution to get Nuget packages do
 <b>Problem Description</b> <br />
 
 <b>Problem:</b><br />
-You are in your house wearing pajamas. You must be appropriately dressed for the temperature before leaving your house.<br />
+You are in your house wearing pajamas. You must be appropriately dressed for the temperature before leaving your house.<br /><br />
 Your challenge is to programmatically process a list of commands for getting ready, enforce related rules, and display appropriate output.<br />
 
 <b>Inputs:</b><br />
@@ -25,16 +25,6 @@ Your challenge is to programmatically process a list of commands for getting rea
 <tr><td>6</td><td>Put on pants</td><td>“shorts”</td><td>“pants”</td></tr>
 <tr><td>7</td><td>eave house</td><td>“leaving house”</td><td>“leaving house”</td></tr>
 <tr><td>8</td><td>Take off pajamas</td><td>“Removing PJs”</td><td>“Removing PJs”</td></tr></table>
-
-Command	|	Description	HOT |	Response		| COLD Response<br />
-1		|	Put on footwear	|	“sandals”	    |  “boots”     <br />
-2		|	Put on headwear	|	“sun visor”	    |   “hat”   <br />
-3		|	Put on socks	|	fail	        |   “socks”<br />
-4		|	Put on shirt	|	“t-shirt”	    |   “shirt”<br />
-5		|	Put on jacket	|	fail	        |   “jacket”<br />
-6		|	Put on pants	|	“shorts”	    |    “pants”<br />
-7		|	Leave house	 	|	“leaving house”	|    “leaving house”<br />
-8		|	Take off pajamas|	“Removing PJs”	|	“Removing PJs”<br />
 
 <b>Rules:</b> <br />
 •	Initial state is in your house with your pajamas on <br />
