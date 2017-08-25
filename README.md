@@ -11,8 +11,8 @@ You are in your house wearing pajamas. You must be appropriately dressed for the
 Your challenge is to programmatically process a list of commands for getting ready, enforce related rules, and display appropriate output.
 
 Inputs:
-1.	Temperature Type (one of the following)
-•	HOT
+1.	Temperature Type (one of the following) <br />
+•	HOT <br />
 •	COLD
 
 2.	Comma separated list of numeric commands
