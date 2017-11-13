@@ -12,7 +12,7 @@ namespace CodeExercise.DressCode.Engine.Clothing
             _temperature = temperature;
             _dressHolder = dressHolder;
         }
-        public IClothing GetClothingInstance(Command command)
+        public Clothing GetClothingInstance(Command command)
         {
             switch (command)
             {

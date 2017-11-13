@@ -11,4 +11,3 @@ C:\Users\Surendra.kumar\Documents\GitHub\CodeExercise\CodeExercise.DressCode.Eng
 C:\Users\Surendra.kumar\Documents\GitHub\CodeExercise\CodeExercise.DressCode.Engine\bin\Debug\CodeExercise.DressCode.Engine.pdb
 C:\Users\Surendra.kumar\Documents\GitHub\CodeExercise\CodeExercise.DressCode.Engine\obj\Debug\CodeExercise.DressCode.Engine.dll
 C:\Users\Surendra.kumar\Documents\GitHub\CodeExercise\CodeExercise.DressCode.Engine\obj\Debug\CodeExercise.DressCode.Engine.pdb
-C:\Users\Surendra.kumar\Documents\GitHub\CodeExercise\CodeExercise.DressCode.Engine\obj\Debug\CodeExercise.DressCode.Engine.csprojResolveAssemblyReference.cache

@@ -4,20 +4,18 @@ using CodeExercise.DressCode.Engine.Violations;
 
 namespace CodeExercise.DressCode.Engine.Clothing
 {
-    internal class Socks: IClothing
+    internal class Socks: Clothing
     {
         private readonly Temperature _temperature;
         private readonly IDressHolder _dressHolder;
         public Socks(Temperature temperature, IDressHolder dressHolder)
+             : base(dressHolder, OutfitType.Socks)
         {
             _temperature = temperature;
             _dressHolder = dressHolder;
         }
-        public string WearAppropriateOutfit()
+        public override string Wear()
         {
-            if (_dressHolder.HasOutfit(OutfitType.Socks))
-                throw new OnlyOnePieceOfEachClothingAllowedViolation();
-
             if (_temperature == Temperature.Hot)
             {
                 throw new CannotPutOnSocksWhenHotViolation();

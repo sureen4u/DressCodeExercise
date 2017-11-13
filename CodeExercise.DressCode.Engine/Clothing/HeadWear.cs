@@ -4,20 +4,18 @@ using CodeExercise.DressCode.Engine.Violations;
 
 namespace CodeExercise.DressCode.Engine.Clothing
 {
-    internal class HeadWear : IClothing
+    internal class HeadWear : Clothing
     {
         private readonly Temperature _temperature;
         private readonly IDressHolder _dressHolder;
         public HeadWear(Temperature temperature, IDressHolder dressHolder)
+             : base(dressHolder, OutfitType.HeadWear)
         {
             _temperature = temperature;
             _dressHolder = dressHolder;
         }
-        public string WearAppropriateOutfit()
+        public override string Wear()
         {
-            if (_dressHolder.HasOutfit(OutfitType.HeadWear))
-                throw new OnlyOnePieceOfEachClothingAllowedViolation();
-
             if (!_dressHolder.HasOutfit(OutfitType.Shirt))
             {
                 throw new ShirtMustBePutOnBeforeHeadwearViolation();

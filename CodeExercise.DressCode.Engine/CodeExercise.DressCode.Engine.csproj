@@ -67,7 +67,7 @@
     <Compile Include="Clothing\Shirt.cs" />
     <Compile Include="Clothing\Pants.cs" />
     <Compile Include="Clothing\ClothingFactory.cs" />
-    <Compile Include="Clothing\IClothing.cs" />
+    <Compile Include="Clothing\Clothing.cs" />
     <Compile Include="Clothing\Socks.cs" />
     <Compile Include="Clothing\FootWear.cs" />
     <Compile Include="DressPicker.cs" />
